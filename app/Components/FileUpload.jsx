@@ -1,7 +1,9 @@
+
 'use client'
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../Styles/FileUpload.css'; 
+
 
 
 function FileUpload() {
@@ -54,18 +56,19 @@ const uploadFile = async () => {
         console.log('this is the message part of the response', response.data.message);
         console.log('this is the data part of the response from the server', response.data);
         
-        console.log("-----TRYING TO GET TO THE TEXT------", response.data.choices[0].message.content);
-        const renderedText = response.data.choices[0].message.content; 
-        console.log('this is the rendered TEXT @$@$@#$@$@$@#$@$', renderedText); 
+        // console.log("-----TRYING TO GET TO THE TEXT------", response.data.choices[0].message.content);
+        // const renderedText = response.data.choices[0].message.content; 
+        // console.log('this is the rendered TEXT @$@$@#$@$@$@#$@$', renderedText); 
 
         // console.log('this is the returned completion choices', completion.choices[0].message.content);
 
         console.log('this is the response', response); 
 
         // setExtractedText(response.data.text); // Set the extracted text in state
-        setExtractedText(renderedText); 
+        // setExtractedText(renderedText); 
         // console.log('this is the extracted text', extractedText); 
         
+
 
       } catch (error) {
         console.error('File not uploaded to server', error);
@@ -118,6 +121,7 @@ return (
         </button>
 
         <div id='extractedText'>
+
 
         <p>
     

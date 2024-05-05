@@ -1,0 +1,88 @@
+
+
+
+#fileUploadSection{
+
+    min-height: 100vh; 
+    background-color: white;
+    color: black; 
+
+
+
+
+}
+
+#formInputSection{
+
+    outline: 20px solid hotpink; 
+    width: 45vw; 
+    margin: 4rem auto; 
+    display: grid;
+    place-content: center;  
+
+
+
+}
+
+
+#fileInputForm{
+
+outline: 4px solid lime; 
+width: 60vw; 
+margin: 0 auto;
+display: grid;
+place-content: center; 
+
+
+}
+
+
+
+#fileInput{
+
+    outline: 6px solid red; 
+    margin: 0 auto; 
+    
+
+
+
+
+}
+
+
+
+#fileSubmit{
+
+
+
+
+
+}
+
+#responseSection{
+
+    outline: 4px solid red; 
+    width: 50vw; 
+    margin: 2rem auto; 
+    display: grid;
+    place-content: center; 
+    height: auto; 
+
+
+
+}
+
+
+
+#extractedTextHeadline{
+
+
+
+}
+
+
+#extractedText{
+
+
+}
+
