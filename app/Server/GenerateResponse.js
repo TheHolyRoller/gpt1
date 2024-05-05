@@ -1,19 +1,28 @@
 
 
-const { OpenAIAPI } = require('openai');
+const OpenAI = require('openai');
 
-const openai = new OpenAIAPI({
+const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY // Make sure to set your API key in the environment variables
 });
 
+
+
 async function sendPromptToOpenAI(text) {
   try {
-    const response = await openai.createCompletion({
-      model: 'text-davinci-003', // or another model of your choice
-      prompt: text,
-      max_tokens: 150
+
+    const prompt  = `evaluate the profitability and scalability of this business idea ` + text; 
+    console.log('this is the prompt', prompt); 
+    const response = await openai.chat.completions.create({
+      messages: [{ role: "system", content: prompt }],
+      model: "gpt-3.5-turbo",
     });
-    return response.data.choices[0].text;
+
+    const gptResponse = response.choices[0].message.content; 
+    const JsonResponse = JSON.stringify(gptResponse); 
+    
+
+    return JsonResponse; 
   } catch (error) {
     console.error('Error connecting to OpenAI:', error);
     throw error;
