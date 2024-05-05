@@ -50,9 +50,9 @@ const uploadFile = async () => {
             console.log('WHY IS THIS NOT RUNNING!@##@'); 
             const response = await axios.post('http://localhost:3000/upload', formatData);
             console.log('this is the RESPONSE', response.data);
-            setExtractedText(response.data); 
-
-
+           await setExtractedText(response.data);
+            console.log("this is the STATE VARIABLE EXTRACTED TEXT", extractedText); 
+                
       } catch (error) {
     
     

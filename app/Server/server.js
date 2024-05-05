@@ -9,12 +9,12 @@ const port = 3000;
 const extractTextFromPDF = require('./ExtractTextFromPDF'); 
 const generateResponse = require('./GenerateResponse'); 
 
+app.use(cors());
 // Set up storage for incoming files using multer
 const storage = multer.memoryStorage(); // Use memory storage to access file data
 
 const upload = multer({ storage: storage });
 
-app.use(cors());
 
 
 // Endpoint to handle POST requests of PDF files
@@ -36,7 +36,7 @@ app.post('/upload', upload.single('pdfFile'), async (req, res) => {
     console.log('this is the extracted RESPONSE FROM GPT ON THE SERVER', gptResponse); 
 
     res.end(gptResponse); 
-  
+
 
 });
 
