@@ -1,0 +1,115 @@
+
+            #navMainContainer{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                backdrop-filter: blur(4px) saturate(160%);
+                -webkit-backdrop-filter: blur(4px) saturate(160%);
+                background-color: rgba(17, 25, 40, 0.22);
+                border: 1px solid rgba(255, 255, 255, 0.125);
+               
+            }
+
+            #navSubContainer{
+
+                position: relative;
+                min-height: 5rem;
+                
+            }
+
+
+            #logoContainer{
+
+                position: absolute;
+                left: clamp(3%, 2% + 0.51rem, 5rem);
+
+                top:20%; 
+                bottom: 50%; 
+
+
+
+            }    
+
+
+            #logo{
+
+                color: white; 
+                font-size: clamp(1rem, 1rem + 1vw, 2.7rem); 
+                font-weight: 800;   
+
+
+
+
+            }
+
+
+
+            #navbarListContainer{
+
+
+
+
+            }
+
+
+
+            #navList{
+
+                display: flex; 
+                position: absolute; 
+                right: clamp(2%, 1.5% + 1vw, 6rem); 
+                top: 50%; 
+                bottom: 50%; 
+                place-items: space-around;
+                align-items: center;
+
+
+
+
+
+
+            }
+
+
+            #listItem{
+
+               
+                margin-left: 1rem; 
+                color: #aaaaab; 
+                
+
+                
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

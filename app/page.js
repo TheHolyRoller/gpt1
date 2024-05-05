@@ -2,13 +2,16 @@
 'use client'; 
 import Image from "next/image";
 import FileUpload from "./Components/FileUpload";
+import Nav from '../app/Components/Navbar'; 
+
 
 
 export default function Home() {
   return (
-    <main>
-    <FileUpload/> 
-    
+    <main id='main' >
+
+  <Nav/>
+
     
     </main>
   );
