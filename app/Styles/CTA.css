@@ -3,20 +3,17 @@
 
 #CTAMainContainer{
 
-    /* outline: 4px solid lime;  */
     margin: 5rem auto; 
     display: grid; 
     place-content: center;  
     font-family: "Poppins", sans-serif;
     background-color: #1b2631; 
 
-
 }
 
 
 #CTASubContainer{
 
-/* outline: 4px solid blue;  */
 display: grid;
 place-content: center; 
 
@@ -28,6 +25,7 @@ place-content: center;
 #headlineContainer{
 
 
+    max-width: 97vw; 
 
 
 }
@@ -35,9 +33,6 @@ place-content: center;
 
 
 #headlineSubContainer{
-
-
-
 
 
 }
@@ -60,9 +55,7 @@ place-content: center;
 
 #CTAButtonSection{
 
-/* outline: 5px solid red;  */
 display: grid;
-/* place-content: center;  */
 margin: 2rem auto; 
 width: 20rem; 
 min-height: 7rem; 
@@ -75,7 +68,6 @@ min-height: 7rem;
 #fileInputContainer{
     
 
-    /* outline: 11px solid blue;  */
     display: grid; 
     justify-content: center;
 
@@ -83,7 +75,6 @@ min-height: 7rem;
 }
 
 #CTAFileUpload{
-    outline: 1px solid grey;
     min-height:2rem;
     margin: 1rem auto;
     background-color: #03c59d;
@@ -126,12 +117,14 @@ place-content: center;
 
 
 
+
 #CTAFileSubmit{
-    /* outline: 4px solid blue; */
+
+
     margin: 2rem auto;
 
     width: 15rem;
-    min-height: 2rem;
+    min-height: 3rem;
     border-radius: 12px ;
     -webkit-border-radius: 12px ;
     -moz-border-radius: 12px ;
@@ -140,6 +133,22 @@ place-content: center;
     background-color: #03c59d;
 
 
+
 }
+
+
+#textOutputSection{
+    width: clamp(18rem, 35em + 10vw, 50em); 
+    max-width: 95vw;
+    min-height: 50vh;
+    margin: 0 auto;
+    background-color: #141517;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+}
+
 
 
