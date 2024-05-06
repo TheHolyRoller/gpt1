@@ -1,95 +1,109 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 
 
-#heroContainer{
+    #heroContainer{
 
-  /* outline: 20px solid lime; */
-  min-height: 50vh;  
-  position: relative;
-  margin: 3rem auto; 
-
-
-
-}
+      /* outline: 20px solid lime; */
+      min-height: 50vh;  
+      position: relative;
+      margin: 0.2rem auto; 
 
 
 
-#heroSubContainer{
+    }
+
+
+
+    #heroSubContainer{
 
 
 
 
 
-}    
+    }    
 
 
 
-#heroImageContainer{
+    #heroImageContainer{
 
-    outline: 5px solid lime; 
+        /* outline: 5px solid lime;  */
 
-
-
-}
+        
 
 
-
-#heroImage{
-
-    background-image: url('../assets/Planet.jpeg');
-    width: 99.99vw; 
-    min-height: 80vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    /* background-size: cover;  */
-
-    background-color: #070920; 
+    }
 
 
 
-}    
+    #heroImage{
+
+        background-image: url('../assets/Planet.jpeg');
+        width: 99.99vw; 
+        min-height: 80vh;
+        background-repeat: no-repeat;
+        background-position: center center;
+        /* background-size: cover;  */
+
+        background-color: #070920; 
 
 
 
-#heroTextContainer{
-  /* outline: 4px solid lime; */
-  position: absolute;
-  top: 50%;
-  left: 51%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-}
+    }    
 
 
 
-#heroText{
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-
-
-  font-size: clamp(1.3rem, 1.5rem + 1vw, 4.5rem); 
-  font-weight: 800;
-  
-  text-align: center;
-
-  transform: skew(-20deg) ;
-  -webkit-transform: skew(-20deg) ;
-  -moz-transform: skew(-20deg) ;
-  -ms-transform: skew(-20deg) ;
-  -o-transform: skew(-20deg) ;
-
-}
+    #heroTextContainer{
+      /* outline: 4px solid lime; */
+      position: absolute;
+      top: 50%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
 
 
 
+    #heroText{
+      color: white;
+      font-family: "Poppins", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+
+
+      font-size: clamp(1.3rem, 1.5rem + 1vw, 4.5rem); 
+      font-weight: 800;
+      
+      text-align: center;
+
+      transform: skew(-20deg) ;
+      -webkit-transform: skew(-20deg) ;
+      -moz-transform: skew(-20deg) ;
+      -ms-transform: skew(-20deg) ;
+      -o-transform: skew(-20deg) ;
+
+    }
+
+
+    @media(max-width: 900px){
+
+      #heroImage{
+
+        min-height: 67vh;
+        
+
+      }
+
+
+
+
+
+    }
 
 
 

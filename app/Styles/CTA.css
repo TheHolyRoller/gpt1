@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+#CTAMainContainer{
+
+    /* outline: 4px solid lime;  */
+    margin: 5rem auto; 
+    display: grid; 
+    place-content: center;  
+    font-family: "Poppins", sans-serif;
+    background-color: #1b2631; 
+
+
+}
+
+
+#CTASubContainer{
+
+/* outline: 4px solid blue;  */
+display: grid;
+place-content: center; 
+
+
+}
+
+
+
+#headlineContainer{
+
+
+
+
+}
+
+
+
+#headlineSubContainer{
+
+
+
+
+
+}
+
+
+
+#headlineText{
+
+    color: white; 
+    font-size: clamp(1.32rem, 1rem + 1vw, 3rem);
+    font-weight: 800; 
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+
+
+}
+
+
+
+
+#CTAButtonSection{
+
+/* outline: 5px solid red;  */
+display: grid;
+/* place-content: center;  */
+margin: 2rem auto; 
+width: 20rem; 
+min-height: 7rem; 
+
+
+
+}
+
+
+#fileInputContainer{
+    
+
+    /* outline: 11px solid blue;  */
+    display: grid; 
+    justify-content: center;
+
+
+}
+
+#CTAFileUpload{
+    outline: 1px solid grey;
+    min-height:2rem;
+    margin: 1rem auto;
+    background-color: #03c59d;
+    border-radius: 12px;
+    cursor: pointer;
+    display: grid; 
+    place-content: center;
+    width: 14rem; 
+
+   
+}
+.CTAFileUpload{
+
+
+
+
+}
+
+
+
+
+
+#CTAFileInput{
+
+display: none; 
+
+
+
+}
+
+
+
+#uploadButtonContainer{
+
+display: grid; 
+place-content: center;  
+
+
+}
+
+
+
+#CTAFileSubmit{
+    /* outline: 4px solid blue; */
+    margin: 2rem auto;
+
+    width: 15rem;
+    min-height: 2rem;
+    border-radius: 12px ;
+    -webkit-border-radius: 12px ;
+    -moz-border-radius: 12px ;
+    -ms-border-radius: 12px ;
+    -o-border-radius: 12px ;
+    background-color: #03c59d;
+
+
+}
+
+

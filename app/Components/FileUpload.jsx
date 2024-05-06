@@ -84,7 +84,7 @@ return (
     <div id='formInputSection' >
 
     <form id='fileInputForm' onSubmit={uploadFile}  >
-    <input type='file' name='pdf' id='fileInput' onChange={handleFileChange} />
+    <input style={{outline: '20px solid red'}}  type='file' name='pdf' id='fileInput' onChange={handleFileChange} />
     <button id='fileSubmit' type='button' onClick={uploadFile}>
         Upload PDF File
 
