@@ -1,5 +1,7 @@
 
-import React from 'react'
+import React from 'react';
+import '../Styles/Hero.css'; 
+
 
 function Hero() {
   return (
@@ -17,7 +19,7 @@ function Hero() {
     <div id='heroTextContainer'>
 
     <h1 id='heroText'> Accelerate Your Ambition </h1>
-
+    
 
     </div>
     
