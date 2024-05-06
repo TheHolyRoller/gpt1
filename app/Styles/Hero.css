@@ -6,7 +6,6 @@
 
     #heroContainer{
 
-      /* outline: 20px solid lime; */
       min-height: 50vh;  
       position: relative;
       margin: 0.2rem auto; 
@@ -29,7 +28,6 @@
 
     #heroImageContainer{
 
-        /* outline: 5px solid lime;  */
 
         
 
@@ -45,7 +43,6 @@
         min-height: 80vh;
         background-repeat: no-repeat;
         background-position: center center;
-        /* background-size: cover;  */
 
         background-color: #070920; 
 
@@ -56,7 +53,6 @@
 
 
     #heroTextContainer{
-      /* outline: 4px solid lime; */
       position: absolute;
       top: 50%;
       left: 51%;
@@ -65,6 +61,8 @@
       -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
+
+      
     }
 
 

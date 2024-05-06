@@ -3,7 +3,9 @@
 
 #CTAMainContainer{
 
-    margin: 5rem auto; 
+    margin: 0 auto; 
+    padding-bottom: 11rem;
+    padding-top: 3.5rem;
     display: grid; 
     place-content: center;  
     font-family: "Poppins", sans-serif;

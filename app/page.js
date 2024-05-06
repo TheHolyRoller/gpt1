@@ -12,7 +12,31 @@ export default function Home() {
   return (
     <main id='main'>
 
+    <nav id='nav' >
+
+    <Nav/> 
+
+    </nav>
+
+    <header id='hero' >
+    <Hero/> 
+
+
+    </header>
+
+    <section id='ctaSection' >
+
+      <CTA/> 
+
+    </section>
+
+    <footer id='footer'>
+
     <Footer/> 
+
+    </footer>
+
+
         
     </main>
   );

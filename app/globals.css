@@ -28,9 +28,53 @@ body {
 #main{
 
   background-color: #141517; 
+  position: relative; 
+
+}
+
+#nav{
+
+position: absolute;
+top: 0; 
+left: 0; 
+right: 0;  
+z-index: 20000;
 
 
 }
+
+
+#hero{
+
+  margin-top: 5.07rem; 
+
+
+}
+
+
+#ctaSection{
+
+
+
+
+}
+
+
+#footer{
+
+position: absolute; 
+bottom: 0; 
+left: 0; 
+right: 0; 
+
+
+
+}
+
+
+
+
+
 
 @layer utilities {
   .text-balance {
