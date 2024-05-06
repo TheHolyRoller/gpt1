@@ -30,6 +30,7 @@ export default function Home() {
 
     </section>
 
+    
     <footer id='footer'>
 
     <Footer/> 
