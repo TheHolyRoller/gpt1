@@ -17,7 +17,7 @@ const handleFileChange = (e) => {
     setSelectedFile(e.target.files[0]); 
     console.log("file has just been submitted"); 
     console.log("this is the current selected file", selectedFile); 
-    
+  
 
 }
 
@@ -130,7 +130,9 @@ const uploadFile = async () => {
 
     </div>
     {/* Add in the text box section here */}
+    {/* Render the extracted text here  */}
     <section id='textOutputSection'>
+    {extractedText}
 
     </section>
 
