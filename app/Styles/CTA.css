@@ -1,6 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
+
+
+:root{
+
+    ---button-color: #03c59d; 
+    ---text-color: #ffffff; 
+    --text-output-color:rgb(217, 222, 236); 
+    /* --background-color: 
+
+
+    --button-font-size: 
+    --header-font-size: 
+
+    --button-font-weight: 
+    --header-font-weight: 
+    --text-output-font-family:  */
+
+
+
+}
+
+
+
 #CTAMainContainer{
 
     margin: 0 auto; 
@@ -87,6 +110,10 @@ min-height: 7rem;
     place-content: center;
     width: 14rem; 
 
+    font-size: clamp(1.1rem, 1rem + 1vw, 1.2rem); 
+    font-weight: 550;
+
+
    
 }
 .CTAFileUpload{
@@ -135,6 +162,8 @@ place-content: center;
     -o-border-radius: 12px ;
     background-color: #03c59d;
 
+    font-size: clamp(1.1rem, 1rem + 1vw, 1.2rem); 
+    font-weight: 550;
 
 
 }
@@ -159,6 +188,7 @@ place-content: center;
     -moz-border-radius:15px;
     -ms-border-radius:15px;
     -o-border-radius:15px;
+
 }
 
 

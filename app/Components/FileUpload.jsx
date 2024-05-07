@@ -6,7 +6,6 @@ import axios from 'axios';
 import '../Styles/FileUpload.css'; 
 
 
-
 function FileUpload() {
 //Add in the state setup here
 const [selectedFile, setSelectedFile] = useState(null);
@@ -18,7 +17,6 @@ const handleFileChange = (e) => {
     setSelectedFile(e.target.files[0]); 
     console.log("file has just been submitted"); 
     console.log("this is the current selected file", selectedFile); 
-    
 
 }
 
