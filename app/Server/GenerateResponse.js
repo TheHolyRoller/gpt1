@@ -22,7 +22,6 @@ async function sendPromptToOpenAI(text) {
     const JsonResponse = JSON.stringify(gptResponse); 
     
 
-    
     return JsonResponse; 
   } catch (error) {
     console.error('Error connecting to OpenAI:', error);

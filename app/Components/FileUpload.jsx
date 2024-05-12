@@ -17,6 +17,7 @@ const handleFileChange = (e) => {
     setSelectedFile(e.target.files[0]); 
     console.log("file has just been submitted"); 
     console.log("this is the current selected file", selectedFile); 
+    
 
 }
 

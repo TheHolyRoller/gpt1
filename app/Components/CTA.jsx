@@ -34,7 +34,6 @@ const handleFileChange = (e) => {
   }
 
 
-
 //Add in the upload file to server function here 
 
 const uploadFile = async () => {
@@ -56,6 +55,7 @@ const uploadFile = async () => {
     formatData.append('pdfFile', selectedFile); 
     console.log('this is the form data with the appended file', formatData); 
     console.log('this is the type of form data', typeof formatData); 
+
 
     try {
         
@@ -99,7 +99,8 @@ const keywordPattern = new RegExp(keywords.join('|'), 'g');
 // console.log('this is the keyword pattern', keywordPattern); 
 
 
-const formattedText = extractedText.replace(keywordPattern, '<div class="keyword" > $&</div>');
+// const formattedText = extractedText.replace(keywordPattern, '<div className="keyword" > $&</div>');
+const formattedText = extractedText; 
 
 
 // Add in the useEffect hook here to orchestrate the whole process. 
@@ -219,7 +220,7 @@ useEffect(() => {
    <div id='fileInputContainer'>
 
     {/* Add in the label here */}
-    <label for="CTAFileInput" id='CTAFileUpload' class='CTAFileUpload' >Browse Files</label>
+    <label htmlFor="CTAFileInput" id='CTAFileUpload' className='CTAFileUpload' >Browse Files</label>
 
     {/*  */}
    <input  type='file' name='pdf' id='CTAFileInput'  onChange={handleFileChange} />
