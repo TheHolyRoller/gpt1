@@ -56,7 +56,6 @@ const uploadFile = async () => {
     console.log('this is the form data with the appended file', formatData); 
     console.log('this is the type of form data', typeof formatData); 
 
-
     try {
         
             console.log('WHY IS THIS NOT RUNNING!@##@'); 
@@ -251,6 +250,20 @@ useEffect(() => {
     {/* <div dangerouslySetInnerHTML={{ __html: formattedText }} /> */}
     <div dangerouslySetInnerHTML={{ __html: formattedText + ' ' + words.join(' ') }} />    </section>
 
+
+    {/* {Add in the Text Input Section here} */}
+    <section id='textInputSection'>
+
+    <input type='text'/> 
+    <div id='inputSubmitButton'>
+
+      {/* Anchor this to the enter button  */}
+      
+    </div>
+
+
+
+    </section>
 
     </div>
     
