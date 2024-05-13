@@ -1,9 +1,10 @@
 
 
 import '../Styles/CTA.css'; 
-import React, { useEffect, useState } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import axios from 'axios';
 import { Inter } from 'next/font/google';
+import SendIcon from '@mui/icons-material/Send';
 
 
 function CTA() {
@@ -13,11 +14,68 @@ function CTA() {
   const [extractedText, setExtractedText] = useState('');
   const [words, setWords] = useState([]); 
   const [validInput, setValidInput] = useState(false); 
+  const [textInput, setTextInput] = useState(''); 
 
 
-  // Add in a state variable to keep track of the validity of the file input 
-  // That way I can use it to decide whether or not to start displaying the loading animation. 
-  // I can also change it when the formatted text changes and therefore hide it when the text begins to start rendering 
+
+// Add in the handle text input function here 
+const handleTextInput = (e) => {
+
+setTextInput(e.target.value); 
+console.log('this is the current text input', e.target.value); 
+
+}
+
+
+// Add in the handle Submit Function here 
+const  uploadText = async () => {
+
+if(textInput){
+
+// Add in a try catch block here 
+console.log('this is the upload Text function'); 
+console.log('Upload Text Button Just clicked'); 
+
+try{
+
+console.log('this is the try block'); 
+
+// Format the text here into JSON Format 
+const data = await JSON.stringify(textInput); 
+
+console.log('this is the JSON data being sent through', data);
+
+
+// Now Send data through to the Server 
+
+try{
+
+console.log('trying to send json data to Server!!!@@@'); 
+const response = await axios.post('http://localhost:3000/upload', data);
+
+
+
+}
+catch(error){
+
+  console.error('the uploading text input did not work', error); 
+  console.error('the JSON text did not even make it to the server'); 
+}
+
+
+
+
+}
+catch(error){
+
+  console.error('the text was not uploaded to the Server', error);
+
+
+}
+
+}
+
+}
 
 
 
@@ -27,6 +85,7 @@ const keywords = ['Profitability:', 'Scalability:', '1.', '2.', '3.'];
 
 //Add in the handle file change function here 
 const handleFileChange = (e) => {
+
 
     setSelectedFile(e.target.files[0]); 
     console.log("file has just been submitted"); 
@@ -40,6 +99,7 @@ const uploadFile = async () => {
 
     console.log('upload button just clicked')
     console.log('this is the upload file function'); 
+
 
     // Check the file format here 
     if(selectedFile){
@@ -55,6 +115,7 @@ const uploadFile = async () => {
     formatData.append('pdfFile', selectedFile); 
     console.log('this is the form data with the appended file', formatData); 
     console.log('this is the type of form data', typeof formatData); 
+
 
     try {
         
@@ -247,28 +308,28 @@ useEffect(() => {
 
     <section id='textOutputSection'>
 
-    {/* <div dangerouslySetInnerHTML={{ __html: formattedText }} /> */}
+
     <div dangerouslySetInnerHTML={{ __html: formattedText + ' ' + words.join(' ') }} />    </section>
 
 
     {/* {Add in the Text Input Section here} */}
     <section id='textInputSection'>
+    <form onSubmit={uploadText} ></form>
+    <input type='text' onChange={handleTextInput}/> 
 
-    <input type='text'/> 
-    <div id='inputSubmitButton'>
+    <button id='inputSubmitButton' type='submit' onClick={uploadText} >
+    {/* Add in a Icon here for the Submit Button  */}
+    <SendIcon/> 
 
-      {/* Anchor this to the enter button  */}
-      
-    </div>
-
-
+    </button>
 
     </section>
 
     </div>
     
     </div>
-  )
+  );
+
 }
 
 export default CTA
