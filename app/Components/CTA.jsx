@@ -24,6 +24,7 @@ const handleTextInput = (e) => {
 setTextInput(e.target.value); 
 console.log('this is the current text input', e.target.value); 
 
+
 }
 
 
@@ -51,7 +52,14 @@ console.log('this is the JSON data being sent through', data);
 try{
 
 console.log('trying to send json data to Server!!!@@@'); 
+// Work out why I'm getting an error here 
 const response = await axios.post('http://localhost:3000/upload', data);
+console.log('this is the response from the api', response); 
+console.log('this is the type of response from the api', typeof response);
+
+console.log('this is the data from the response', response.data); 
+
+
 
 
 
@@ -78,9 +86,6 @@ catch(error){
 }
 
 
-
-// Create the keyword Array here 
-
 const keywords = ['Profitability:', 'Scalability:', '1.', '2.', '3.']; 
 
 //Add in the handle file change function here 
@@ -93,7 +98,6 @@ const handleFileChange = (e) => {
   }
 
 
-//Add in the upload file to server function here 
 
 const uploadFile = async () => {
 
@@ -117,6 +121,7 @@ const uploadFile = async () => {
     console.log('this is the type of form data', typeof formatData); 
 
 
+    
     try {
         
             console.log('WHY IS THIS NOT RUNNING!@##@'); 

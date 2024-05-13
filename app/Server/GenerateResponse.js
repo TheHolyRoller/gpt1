@@ -11,19 +11,15 @@ const openai = new OpenAI({
 async function sendPromptToOpenAI(text) {
   try {
 
-
-    console.log('this is the type of text input', typeof text); 
     const prompt  = `evaluate the profitability and scalability of this business idea ` + text; 
     console.log('this is the prompt', prompt); 
     const response = await openai.chat.completions.create({
       messages: [{ role: "system", content: prompt }],
       model: "gpt-3.5-turbo",
     });
-    
 
     const gptResponse = response.choices[0].message.content; 
     const JsonResponse = JSON.stringify(gptResponse); 
-
     
 
     return JsonResponse; 
