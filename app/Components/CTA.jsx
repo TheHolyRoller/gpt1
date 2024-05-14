@@ -58,7 +58,9 @@ console.log('this is the response from the api', response);
 console.log('this is the type of response from the api', typeof response);
 
 console.log('this is the data from the response', response.data); 
-
+await setExtractedText(response.data);
+console.log("this is the STATE VARIABLE EXTRACTED TEXT", extractedText); 
+    
 
 
 
@@ -119,7 +121,6 @@ const uploadFile = async () => {
     formatData.append('pdfFile', selectedFile); 
     console.log('this is the form data with the appended file', formatData); 
     console.log('this is the type of form data', typeof formatData); 
-
 
     
     try {
@@ -186,10 +187,6 @@ useEffect(() => {
     // Run the shift sub-routine here 
     setWords(prevWords => [...prevWords, allWords.shift()]); 
     // console.log('this is the new previous word list now', prevWords); 
-
-
-
-
 
 
   }
