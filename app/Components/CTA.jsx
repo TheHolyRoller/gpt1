@@ -262,7 +262,7 @@ useEffect(() => {
 
         <p id='headlineText'>
         
-        Ready to Turn Your Dreams Into Reality? 
+        {/* Ready to Turn Your Dreams Into Reality?  */}
 
 
         </p>
@@ -315,13 +315,18 @@ useEffect(() => {
 
 
     {/* {Add in the Text Input Section here} */}
-    <section id='textInputSection'>
+    <section id='textInputSection' className='relative '  >
     <form onSubmit={uploadText} ></form>
-    <input type='text' onChange={handleTextInput}/> 
+    <input className=' flex justify-center items-center mx-auto mt-7 rounded-lg mb-4'   type='text' onChange={handleTextInput}/> 
 
-    <button id='inputSubmitButton' type='submit' onClick={uploadText} >
+    <button id='inputSubmitButton' className='absolute right-0 translate-y-[-2.6rem] translate-x-[-800%] text-white  ' type='submit' onClick={uploadText} >
     {/* Add in a Icon here for the Submit Button  */}
-    <SendIcon/> 
+    <SendIcon/>  
+
+
+
+    
+
 
     </button>
 

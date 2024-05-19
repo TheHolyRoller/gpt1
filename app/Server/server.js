@@ -28,6 +28,7 @@ app.post('/upload', upload.single('pdfFile'), async (req, res) => {
 
   if(contentType === 'application/x-www-form-urlencoded'){
   
+    
 
     // Extract the text from the request body 
     console.log('this is the request body', req.body); 
@@ -62,6 +63,7 @@ console.log('this is the else statement');
     return res.status(400).send('No file uploaded.');
   }
 
+    
 
 try{
   

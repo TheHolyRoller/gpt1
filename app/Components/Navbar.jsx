@@ -15,7 +15,9 @@ function Navbar() {
 
     <div id='logo'>
 
-    ElitePlan
+    {/* Vitalium */}
+    HealthPlan
+    {/* Fitness  */}
 
     </div>
 

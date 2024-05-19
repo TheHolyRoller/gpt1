@@ -18,7 +18,7 @@ function Hero() {
 
     <div id='heroTextContainer'>
 
-    <h1 id='heroText'> Accelerate Your Ambition </h1>
+    <h1 id='heroText'> Accelerate Your Vitality </h1>
     
 
     </div>
